@@ -58,3 +58,4 @@ public/favicon.svg
 2. netlify.com → Add new site → import the repo.
    Build command `npm run build`, publish directory `dist`.
 3. Domain management → add `sciencepetr.com`, set the DNS records in Cloudflare.
+# fuzzy-palm-tree
