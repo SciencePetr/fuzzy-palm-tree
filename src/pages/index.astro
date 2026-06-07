@@ -1,0 +1,128 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+/* ============================================================
+   LINKS — edit the URLs between the quotes below.
+   Leave the quotes and the word before the = sign alone.
+   ============================================================ */
+const channel = "https://www.youtube.com/@SciencePetr";
+const patreon = "https://www.patreon.com/cw/SciencePetr";
+const email = "mailto:hello@sciencepetr.com";
+const veritasium = "https://www.youtube.com/@veritasium";
+const palisade = "https://palisaderesearch.org/";
+const hintonVideo = "https://www.youtube.com/watch?v=A3HjNYDIhGU";
+
+// A few favourite Veritasium videos
+const fav1 = "https://youtu.be/Xzv84ZdtlE0"; // Oppenheimer
+const fav2 = "https://youtu.be/IV3dnLzthDA"; // Most people in history
+const fav3 = "https://youtu.be/QQkmJI63ykI"; // Millions / Billions
+const fav4 = "https://youtu.be/16Ci_2bN_zc"; // Penny from a skyscraper
+const fav5 = "https://youtu.be/094y1Z2wpJg"; // Collatz
+const fav6 = "https://youtu.be/Tt6WQYtefXA"; // Sand into swords
+
+// Talks & podcasts
+const triplej = "https://www.abc.net.au/triplej/programs/dr-karl-podcast/sciencetriplej-20260507/106653544";
+const debrief = "https://podcasts.apple.com/ca/podcast/the-great-ai-safety-debrief-part-one-with-dr-petr-lebedev-460/id1167803730?i=1000748701044";
+
+// Fun little things
+const poetry = "https://poetrypractice.com";
+const touchgrass = "https://touchgrassgpt.com";
+---
+
+<BaseLayout>
+  <article class="home wrap">
+
+    <!-- ===== NAME (the big heading) ===== -->
+    <h1>SciencePetr</h1>
+
+    <!-- ===== TAGLINE (one line under your name) ===== -->
+    <p class="tagline">
+      Science communicator and physicist, making videos about physics, math, and
+      AI safety.
+    </p>
+
+    <!-- ===== TOP LINKS ===== -->
+    <p class="social">
+      <a href={channel}>YouTube</a> · <a href={patreon}>Patreon</a> ·
+      <a href={email}>Contact me</a>
+    </p>
+
+    <!-- ===== PHOTO (replace public/profile.jpg to change the image) ===== -->
+    <img class="portrait" src="/profile.jpg" alt="Petr Lebedev" width="300" height="300" />
+
+    <!-- ===== ABOUT — edit these paragraphs ===== -->
+    <p>
+      I'm Dr. Petr Lebedev — a science communicator and physicist who turns
+      complex science into stories that reach millions of people.
+    </p>
+    <p>
+      I run <a href={channel}>SciencePetr</a>, an independent YouTube channel
+      focused on AI safety. Before that I was the science communication lead at
+      <a href={palisade}>Palisade Research</a>, where I wrote and directed
+      <a href={hintonVideo}>“No One Understands Why AI Works”</a> — a 42-minute
+      film featuring Nobel laureate Geoffrey Hinton.
+    </p>
+    <p>
+      For four years I was a senior writer/director at
+      <a href={veritasium}>Veritasium</a>, one of the world's largest and most
+      respected science YouTube channels. As its first hire, I helped grow it
+      from 7 to 17 million subscribers, writing and directing more than 50
+      videos — over 20 of them with 10M+ views. I hold a PhD in physics from the
+      University of Sydney, and I'm a Streamy Award winner for Best Educational
+      Content Creator.
+    </p>
+
+    <!-- ===== VIDEOS ===== -->
+    <h2>Videos</h2>
+    <ul>
+      <li><a href={channel}>SciencePetr</a> — my channel on physics, math, and AI safety</li>
+      <li><a href={hintonVideo}>“No One Understands Why AI Works”</a> — with Geoffrey Hinton (Palisade)</li>
+      <li>
+        <a href={veritasium}>Work at Veritasium</a> — 50+ videos, writing and directing. A few favourites:
+        <ul>
+          <li><a href={fav1}>The Man Who Gave us the Power To Destroy Ourselves (Oppenheimer)</a></li>
+          <li><a href={fav2}>The Man Who Accidentally Killed The Most People In History</a></li>
+          <li><a href={fav3}>The Man Who Killed Millions and Saved Billions</a></li>
+          <li><a href={fav4}>How Dangerous is a Penny Dropped From a Skyscraper?</a></li>
+          <li><a href={fav5}>The Simplest Math Problem No One Can Solve — Collatz Conjecture</a></li>
+          <li><a href={fav6}>How Japanese Masters Turn Sand Into Swords</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ===== TALKS & PODCASTS ===== -->
+    <h2>Talks &amp; podcasts</h2>
+    <ul>
+      <li>“Alchemy, Not Science — on the existential risk of AI” — SXSW Sydney 2025</li>
+      <li><a href={triplej}>Triple J with Dr Karl</a></li>
+      <li><a href={debrief}>The Great AI Safety Debrief</a></li>
+    </ul>
+
+    <!-- ===== HIRE ME FOR ===== -->
+    <h2>Hire me for</h2>
+    <ul>
+      <li><strong>Talks</strong> — about AI, AI safety, physics, math, and science communication.</li>
+      <li><strong>YouTube consulting</strong> — I've worked with some of the biggest and most respected YouTube channels on content and strategy.</li>
+      <li><strong>Science communications strategy</strong> — turning complex, technical work into clear stories that land with the public and the press, for research labs, companies, and institutions.</li>
+      <li><strong>AI consulting</strong> — advising teams on AI safety and capabilities, helping them adopt and use AI tools effectively, and communicate the whole picture.</li>
+    </ul>
+    <p><a href={email}>Get in touch</a> to talk about a project.</p>
+
+    <!-- ===== FUN LITTLE THINGS ===== -->
+    <h2>Fun little things</h2>
+    <ul>
+      <li><a href={poetry}>poetrypractice.com</a></li>
+      <li><a href={touchgrass}>touchgrassgpt.com</a></li>
+    </ul>
+
+    <!-- ===== CONTACT ===== -->
+    <h2 id="contact">Contact me</h2>
+    <p>The best way to reach me is by email.</p>
+    <ul>
+      <li><a href={email}>hello@sciencepetr.com</a></li>
+      <li><a href={channel}>YouTube</a></li>
+      <li><a href={patreon}>Patreon</a></li>
+    </ul>
+
+  </article>
+</BaseLayout>
